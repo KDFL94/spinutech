@@ -1,7 +1,7 @@
 {
-  "name": "jpauljones-skills-test",
+  "name": "spinutech-skills-test",
   "version": "1.0.0",
-  "description": "JPaulJones Skills Test",
+  "description": "Spinutech Skills Test",
   "main": "./src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -39,8 +39,6 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7",
-    "regenerator-runtime": "^0.13.9",
-    "slick-carousel": "^1.8.1"
+    "regenerator-runtime": "^0.13.9"
   }
 }

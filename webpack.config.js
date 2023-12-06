@@ -3,7 +3,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+// const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const glob = require('glob');
 
@@ -30,11 +30,11 @@ const config = {
     new HtmlWebpackPlugin({
       template: "index.html"
     }),
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      proxy: 'http://localhost:8080/'
-    }),
+    // new BrowserSyncPlugin({
+    //   host: 'localhost',
+    //   port: 3000,
+    //   proxy: 'http://localhost:8080/'
+    // }),
     new ImageminPlugin({
       externalImages: {
         context: '.',
