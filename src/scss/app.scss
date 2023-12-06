@@ -1,6 +1,8 @@
 @import '~bootstrap';
 @import 'shapes';
 @import 'colors';
+@import 'fonts';
+@import 'made_with';
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -11,6 +13,7 @@ body {
   position: relative;
   padding: 50px 0 0 0;
   background-color: $white;
+  font-family: $opensans;
 
   @media (min-width: 992px) {
     background-color: $black;

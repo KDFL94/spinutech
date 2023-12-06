@@ -8,16 +8,34 @@
   list-style-type: none;
 }
 
-ul.a-icon-row {
-  li {
-    margin: 0 15px;
-
-    &:first-child {
-      margin-left: 0;
+.a-icon-row {
+  padding: 0;
+  
+  &.circle-icons {
+    .a-icon {
+      border-radius: 50%;
     }
+  }
 
-    &:last-child {
-      margin-right: 0;
+  li {
+    @media screen and (min-width: 768px) {
+      margin: 0 15px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.a-icon-wrap {
+  &:hover {
+    .a-icon-title {
+      opacity: 100%;
     }
   }
 }
@@ -25,6 +43,8 @@ ul.a-icon-row {
 .a-icon {
   width: 100px;
   height: 100px;
+  opacity: 100%;
+  transition: opacity 0.8s ease-in-out;
 
   &:hover {
     cursor: pointer;
@@ -35,8 +55,5 @@ ul.a-icon-row {
   text-align: center;
   color: $purple;
   margin-top: 10px;
-}
-
-.circle-icon {
-  border-radius: 50%;
+  opacity: 0;
 }
