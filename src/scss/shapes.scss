@@ -1,0 +1,42 @@
+/*
+  Shapes
+
+  Heres where we will define all the shapes
+*/
+
+.a-icon-row {
+  list-style-type: none;
+}
+
+ul.a-icon-row {
+  li {
+    margin: 0 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.a-icon {
+  width: 100px;
+  height: 100px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.a-icon-title {
+  text-align: center;
+  color: $purple;
+  margin-top: 10px;
+}
+
+.circle-icon {
+  border-radius: 50%;
+}

@@ -1,1 +1,18 @@
 @import '~bootstrap';
+@import 'shapes';
+@import 'colors';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  padding: 50px 0 0 0;
+  background-color: $white;
+
+  @media (min-width: 992px) {
+    background-color: $black;
+  }
+}
